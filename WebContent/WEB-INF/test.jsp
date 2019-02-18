@@ -19,5 +19,13 @@
             out.println( parametre );
             %>
         </p>
+        <p>
+            Récupération du bean :
+            <%	
+	    	com.sdzee.beans.Coyote notreBean = (com.sdzee.beans.Coyote) request.getAttribute("coyote");
+	    	out.println( notreBean.getPrenom() );
+            out.println( notreBean.getNom() );
+            %>
+        </p>
 	</body>
 </html>
